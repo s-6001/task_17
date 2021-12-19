@@ -10,7 +10,7 @@ namespace task_17
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine("Введите номер счета");
 
         }
     }
@@ -20,5 +20,11 @@ namespace task_17
         public T BillNumber { get; set; }
         public double Balance { get; set; }
         public string Name { get; set; }
+        Bill(T bn, double bal, string n)
+        {
+            BillNumber = bn;
+            Balance = bal;
+            Name = n;
+        }
     }
 }
